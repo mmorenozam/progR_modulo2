@@ -1092,7 +1092,9 @@ tabla_cars %>%
 
     -   `unite` hace lo contrario a `separate`.
 
-    -   `pivot_longer` transforma tablas de formato ancho a largo
+    -   `pivot_longer` transforma tablas de formato ancho a largo.
+    
+    -   `pivot_wider` transofrma tablas de formato largo a ancho.
 
 -   `readr`, parte del `tidyverse`
 
