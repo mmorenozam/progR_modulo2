@@ -633,39 +633,39 @@ msleep %>%
             q3 = quantile(sleep_total, probs = 0.75))
 ```
 
-## Autoevaluación \# 5
+## Autoevaluación \# 5 {.smaller}
 
-+-------------------------------------------------------------------------------------------------+------------+
-| El operador de cascada de base R es `|>`                                                        | V/F        |
-+-------------------------------------------------------------------------------------------------+------------+
-| Este es un buen nombre para un objeto en R: `Ingresos Anuales`                                  | V/F        |
-+-------------------------------------------------------------------------------------------------+------------+
-| Cuando digo que una tabla está en formato largo, puedo decir que es rectangular                 | V/F        |
-+-------------------------------------------------------------------------------------------------+------------+
-| `Z` es una función, `Y` es un objeto. Con la expr. `Y(Z)` estoy evaluando `Y` en función de `Z` | V/F        |
-+-------------------------------------------------------------------------------------------------+------------+
-| La tabla de datos `msleep` se refiere a las horas de sueño de mamíferos                         | V/F        |
-+-------------------------------------------------------------------------------------------------+------------+
++-----------------------------------------------------------------------------------------------------+------------+
+| 1.  El operador de cascada de base R es `|>`                                                        | V/F        |
++-----------------------------------------------------------------------------------------------------+------------+
+| 2.  Este es un buen nombre para un objeto en R: `Ingresos Anuales`                                  | V/F        |
++-----------------------------------------------------------------------------------------------------+------------+
+| 3.  Cuando digo que una tabla está en formato largo, puedo decir que es rectangular                 | V/F        |
++-----------------------------------------------------------------------------------------------------+------------+
+| 4.  `Z` es una función, `Y` es un objeto. Con la expr. `Y(Z)` estoy evaluando `Y` en función de `Z` | V/F        |
++-----------------------------------------------------------------------------------------------------+------------+
+| 5.  La tabla de datos `msleep` se refiere a las horas de sueño de mamíferos                         | V/F        |
++-----------------------------------------------------------------------------------------------------+------------+
 
 ## Autoevaluación \# 5 {.smaller visibility="uncounted"}
 
-+------------------------------------------------------------------------------------------------------------+-----------+
-| Estas expresiones dan el mismo resultado:                                                                  | V/F       |
-|                                                                                                            |           |
-| `msleep %>% filter(order == "Primates" | sleep_total >= 10)`                                               |           |
-|                                                                                                            |           |
-| `msleep %>% filter(order == "Primates", sleep_total >= 10)`                                                |           |
-+------------------------------------------------------------------------------------------------------------+-----------+
-| Esta expresión filtra la tabla `iris` excluyendo la categoría `virginica` de la columna `Species`          | V/F       |
-|                                                                                                            |           |
-| `iris %>% filter(Species != "virginica")`                                                                  |           |
-+------------------------------------------------------------------------------------------------------------+-----------+
-| En la anterior expresión **NO** estoy haciendo cambios en la tabla `iris`                                  | V/F       |
-+------------------------------------------------------------------------------------------------------------+-----------+
-| Deseo calcular la suma de `Petal.Width` por `Species` de la tabla iris. Es correcta la siguiente expresión | V/F       |
-|                                                                                                            |           |
-| `iris %>% filter(Species) %>% summarize(suma = sum())`                                                     |           |
-+------------------------------------------------------------------------------------------------------------+-----------+
++----------------------------------------------------------------------------------------------------------------+-----------+
+| 6.  Estas expresiones dan el mismo resultado:                                                                  | V/F       |
+|                                                                                                                |           |
+| `msleep %>% filter(order == "Primates" | sleep_total >= 10)`                                                   |           |
+|                                                                                                                |           |
+| `msleep %>% filter(order == "Primates", sleep_total >= 10)`                                                    |           |
++----------------------------------------------------------------------------------------------------------------+-----------+
+| 7.  Esta expresión filtra la tabla `iris` excluyendo la categoría `virginica` de la columna `Species`          | V/F       |
+|                                                                                                                |           |
+| `iris %>% filter(Species != "virginica")`                                                                      |           |
++----------------------------------------------------------------------------------------------------------------+-----------+
+| 8.  En la anterior expresión **NO** estoy haciendo cambios en la tabla `iris`                                  | V/F       |
++----------------------------------------------------------------------------------------------------------------+-----------+
+| 9.  Deseo calcular la suma de `Petal.Width` por `Species` de la tabla iris. Es correcta la siguiente expresión | V/F       |
+|                                                                                                                |           |
+| `iris %>% filter(Species) %>% summarize(suma = sum())`                                                         |           |
++----------------------------------------------------------------------------------------------------------------+-----------+
 
 # Importación y exportación de datos
 
@@ -988,33 +988,33 @@ tabla_ancha
 
 ## Autoevaluación \# 6 {.smaller}
 
-+-------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
-| La tabla de datos `airquality` trata de                                       | a\) Medidas de calidad de aire en Nueva York                                       |
-|                                                                               |                                                                                    |
-|                                                                               | b\) Medidas de contaminación de aire                                               |
-|                                                                               |                                                                                    |
-|                                                                               | c\) Medidas de presión atmosférica en UK                                           |
-+-------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
-| ¿Por qué debemos cambiar `\` por `/` en R?                                    | a\) Da igual, no es necesario                                                      |
-|                                                                               |                                                                                    |
-|                                                                               | b\) Puede provocar errores porque `\` es usado para caracteres especiales          |
-|                                                                               |                                                                                    |
-|                                                                               | c\) Solo es necesario en Windows                                                   |
-+-------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
-| En la función `write.csv`, si el argumento `row.names` no es seteado como `F` | a\) El archivo .csv creado contendrá una columna extra indicando el número de fila |
-|                                                                               |                                                                                    |
-|                                                                               | b\) El separador de columnas será el punto y coma en lugar de la coma              |
-|                                                                               |                                                                                    |
-|                                                                               | c\) No pasa nada                                                                   |
-+-------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+| 1.  La tabla de datos `airquality` trata de                                       | a\) Medidas de calidad de aire en Nueva York                                       |
+|                                                                                   |                                                                                    |
+|                                                                                   | b\) Medidas de contaminación de aire                                               |
+|                                                                                   |                                                                                    |
+|                                                                                   | c\) Medidas de presión atmosférica en UK                                           |
++-----------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+| 2.  ¿Por qué debemos cambiar `\` por `/` en R?                                    | a\) Da igual, no es necesario                                                      |
+|                                                                                   |                                                                                    |
+|                                                                                   | b\) Puede provocar errores porque `\` es usado para caracteres especiales          |
+|                                                                                   |                                                                                    |
+|                                                                                   | c\) Solo es necesario en Windows                                                   |
++-----------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
+| 3.  En la función `write.csv`, si el argumento `row.names` no es seteado como `F` | a\) El archivo .csv creado contendrá una columna extra indicando el número de fila |
+|                                                                                   |                                                                                    |
+|                                                                                   | b\) El separador de columnas será el punto y coma en lugar de la coma              |
+|                                                                                   |                                                                                    |
+|                                                                                   | c\) No pasa nada                                                                   |
++-----------------------------------------------------------------------------------+------------------------------------------------------------------------------------+
 
 ## Autoevaluación \# 6 {.smaller .scrollable visibility="uncounted"}
 
 `mtcars` es una tabla de base R.
 
-|                           |     |
-|---------------------------|-----|
-| Esta tabla es rectangular | V/F |
++-------------------------------+-----+
+| 4.  Esta tabla es rectangular | V/F |
++-------------------------------+-----+
 
 En el siguiente código:
 
@@ -1028,27 +1028,27 @@ tabla_cars %>%
                values_to = "valores")
 ```
 
-+-----------------------------------------------------+-----------------------------------------------------------------------+
-| En la línea 1 estamos creando una copia de `mtcars` | V/F                                                                   |
-+-----------------------------------------------------+-----------------------------------------------------------------------+
-| En la línea 3 estamos                               | a\) Cambiando los nombres de las columnas de `tabla_cars`             |
-|                                                     |                                                                       |
-|                                                     | b\) Extrayendo los nombres de las filas de `tabla_cars`               |
-|                                                     |                                                                       |
-|                                                     | c\) Creando una nueva variable con los nombres de las marcas de autos |
-+-----------------------------------------------------+-----------------------------------------------------------------------+
-| En las líneas 4 a 7 estamos                         | a\) Transformando de formato largo a ancho                            |
-|                                                     |                                                                       |
-|                                                     | b\) Transformando de formato ancho a largo                            |
-|                                                     |                                                                       |
-|                                                     | c\) Preparando la tabla para exportar                                 |
-+-----------------------------------------------------+-----------------------------------------------------------------------+
-| La expresión `-c("marca")` significa                | a\) Que estamos borrando la columna "marca" de `tabla_cars`           |
-|                                                     |                                                                       |
-|                                                     | b\) Que excluya "marca" del pivot                                     |
-|                                                     |                                                                       |
-|                                                     | c\) Ninguna de las anteriores                                         |
-+-----------------------------------------------------+-----------------------------------------------------------------------+
++---------------------------------------------------------+-----------------------------------------------------------------------+
+| 5.  En la línea 1 estamos creando una copia de `mtcars` | V/F                                                                   |
++---------------------------------------------------------+-----------------------------------------------------------------------+
+| 6.  En la línea 3 estamos                               | a\) Cambiando los nombres de las columnas de `tabla_cars`             |
+|                                                         |                                                                       |
+|                                                         | b\) Extrayendo los nombres de las filas de `tabla_cars`               |
+|                                                         |                                                                       |
+|                                                         | c\) Creando una nueva variable con los nombres de las marcas de autos |
++---------------------------------------------------------+-----------------------------------------------------------------------+
+| 7.  En las líneas 4 a 7 estamos                         | a\) Transformando de formato largo a ancho                            |
+|                                                         |                                                                       |
+|                                                         | b\) Transformando de formato ancho a largo                            |
+|                                                         |                                                                       |
+|                                                         | c\) Preparando la tabla para exportar                                 |
++---------------------------------------------------------+-----------------------------------------------------------------------+
+| 8.  La expresión `-c("marca")` significa                | a\) Que estamos borrando la columna "marca" de `tabla_cars`           |
+|                                                         |                                                                       |
+|                                                         | b\) Que excluya "marca" del pivot                                     |
+|                                                         |                                                                       |
+|                                                         | c\) Ninguna de las anteriores                                         |
++---------------------------------------------------------+-----------------------------------------------------------------------+
 
 ## Funciones y librerías en esta sesión {.smaller .scrollable}
 
@@ -1093,7 +1093,7 @@ tabla_cars %>%
     -   `unite` hace lo contrario a `separate`.
 
     -   `pivot_longer` transforma tablas de formato ancho a largo.
-    
+
     -   `pivot_wider` transofrma tablas de formato largo a ancho.
 
 -   `readr`, parte del `tidyverse`

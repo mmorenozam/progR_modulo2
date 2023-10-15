@@ -1254,7 +1254,7 @@ Mauricio Moreno, PhD
 </div>
 </div>
 </section>
-<section id="autoevaluación-5" class="slide level2">
+<section id="autoevaluación-5" class="slide level2 smaller">
 <h2>Autoevaluación # 5</h2>
 <table>
 <colgroup>
@@ -1263,23 +1263,33 @@ Mauricio Moreno, PhD
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>El operador de cascada de base R es <code>|&gt;</code></td>
+<td><ol type="1">
+<li>El operador de cascada de base R es <code>|&gt;</code></li>
+</ol></td>
 <td>V/F</td>
 </tr>
 <tr class="even">
-<td>Este es un buen nombre para un objeto en R: <code>Ingresos Anuales</code></td>
+<td><ol start="2" type="1">
+<li>Este es un buen nombre para un objeto en R: <code>Ingresos Anuales</code></li>
+</ol></td>
 <td>V/F</td>
 </tr>
 <tr class="odd">
-<td>Cuando digo que una tabla está en formato largo, puedo decir que es rectangular</td>
+<td><ol start="3" type="1">
+<li>Cuando digo que una tabla está en formato largo, puedo decir que es rectangular</li>
+</ol></td>
 <td>V/F</td>
 </tr>
 <tr class="even">
-<td><code>Z</code> es una función, <code>Y</code> es un objeto. Con la expr. <code>Y(Z)</code> estoy evaluando <code>Y</code> en función de <code>Z</code></td>
+<td><ol start="4" type="1">
+<li><code>Z</code> es una función, <code>Y</code> es un objeto. Con la expr. <code>Y(Z)</code> estoy evaluando <code>Y</code> en función de <code>Z</code></li>
+</ol></td>
 <td>V/F</td>
 </tr>
 <tr class="odd">
-<td>La tabla de datos <code>msleep</code> se refiere a las horas de sueño de mamíferos</td>
+<td><ol start="5" type="1">
+<li>La tabla de datos <code>msleep</code> se refiere a las horas de sueño de mamíferos</li>
+</ol></td>
 <td>V/F</td>
 </tr>
 </tbody>
@@ -1294,22 +1304,30 @@ Mauricio Moreno, PhD
 </colgroup>
 <tbody>
 <tr class="odd">
-<td><p>Estas expresiones dan el mismo resultado:</p>
+<td><ol start="6" type="1">
+<li>Estas expresiones dan el mismo resultado:</li>
+</ol>
 <p><code>msleep %&gt;% filter(order == "Primates" | sleep_total &gt;= 10)</code></p>
 <p><code>msleep %&gt;% filter(order == "Primates", sleep_total &gt;= 10)</code></p></td>
 <td>V/F</td>
 </tr>
 <tr class="even">
-<td><p>Esta expresión filtra la tabla <code>iris</code> excluyendo la categoría <code>virginica</code> de la columna <code>Species</code></p>
+<td><ol start="7" type="1">
+<li>Esta expresión filtra la tabla <code>iris</code> excluyendo la categoría <code>virginica</code> de la columna <code>Species</code></li>
+</ol>
 <p><code>iris %&gt;% filter(Species != "virginica")</code></p></td>
 <td>V/F</td>
 </tr>
 <tr class="odd">
-<td>En la anterior expresión <strong>NO</strong> estoy haciendo cambios en la tabla <code>iris</code></td>
+<td><ol start="8" type="1">
+<li>En la anterior expresión <strong>NO</strong> estoy haciendo cambios en la tabla <code>iris</code></li>
+</ol></td>
 <td>V/F</td>
 </tr>
 <tr class="even">
-<td><p>Deseo calcular la suma de <code>Petal.Width</code> por <code>Species</code> de la tabla iris. Es correcta la siguiente expresión</p>
+<td><ol start="9" type="1">
+<li>Deseo calcular la suma de <code>Petal.Width</code> por <code>Species</code> de la tabla iris. Es correcta la siguiente expresión</li>
+</ol>
 <p><code>iris %&gt;% filter(Species) %&gt;% summarize(suma = sum())</code></p></td>
 <td>V/F</td>
 </tr>
@@ -1739,24 +1757,30 @@ Mauricio Moreno, PhD
 <h2>Autoevaluación # 6</h2>
 <table>
 <colgroup>
-<col style="width: 48%">
-<col style="width: 51%">
+<col style="width: 49%">
+<col style="width: 50%">
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>La tabla de datos <code>airquality</code> trata de</td>
+<td><ol type="1">
+<li>La tabla de datos <code>airquality</code> trata de</li>
+</ol></td>
 <td><p>a) Medidas de calidad de aire en Nueva York</p>
 <p>b) Medidas de contaminación de aire</p>
 <p>c) Medidas de presión atmosférica en UK</p></td>
 </tr>
 <tr class="even">
-<td>¿Por qué debemos cambiar <code>\</code> por <code>/</code> en R?</td>
+<td><ol start="2" type="1">
+<li>¿Por qué debemos cambiar <code>\</code> por <code>/</code> en R?</li>
+</ol></td>
 <td><p>a) Da igual, no es necesario</p>
 <p>b) Puede provocar errores porque <code>\</code> es usado para caracteres especiales</p>
 <p>c) Solo es necesario en Windows</p></td>
 </tr>
 <tr class="odd">
-<td>En la función <code>write.csv</code>, si el argumento <code>row.names</code> no es seteado como <code>F</code></td>
+<td><ol start="3" type="1">
+<li>En la función <code>write.csv</code>, si el argumento <code>row.names</code> no es seteado como <code>F</code></li>
+</ol></td>
 <td><p>a) El archivo .csv creado contendrá una columna extra indicando el número de fila</p>
 <p>b) El separador de columnas será el punto y coma en lugar de la coma</p>
 <p>c) No pasa nada</p></td>
@@ -1767,10 +1791,16 @@ Mauricio Moreno, PhD
 <section id="autoevaluación-6-1" class="slide level2 smaller scrollable" data-visibility="uncounted">
 <h2>Autoevaluación # 6</h2>
 <p><code>mtcars</code> es una tabla de base R.</p>
-<table>
+<table style="width:53%;">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 8%">
+</colgroup>
 <tbody>
 <tr class="odd">
-<td>Esta tabla es rectangular</td>
+<td><ol start="4" type="1">
+<li>Esta tabla es rectangular</li>
+</ol></td>
 <td>V/F</td>
 </tr>
 </tbody>
@@ -1787,28 +1817,36 @@ Mauricio Moreno, PhD
 </div>
 <table>
 <colgroup>
-<col style="width: 42%">
-<col style="width: 57%">
+<col style="width: 44%">
+<col style="width: 55%">
 </colgroup>
 <tbody>
 <tr class="odd">
-<td>En la línea 1 estamos creando una copia de <code>mtcars</code></td>
+<td><ol start="5" type="1">
+<li>En la línea 1 estamos creando una copia de <code>mtcars</code></li>
+</ol></td>
 <td>V/F</td>
 </tr>
 <tr class="even">
-<td>En la línea 3 estamos</td>
+<td><ol start="6" type="1">
+<li>En la línea 3 estamos</li>
+</ol></td>
 <td><p>a) Cambiando los nombres de las columnas de <code>tabla_cars</code></p>
 <p>b) Extrayendo los nombres de las filas de <code>tabla_cars</code></p>
 <p>c) Creando una nueva variable con los nombres de las marcas de autos</p></td>
 </tr>
 <tr class="odd">
-<td>En las líneas 4 a 7 estamos</td>
+<td><ol start="7" type="1">
+<li>En las líneas 4 a 7 estamos</li>
+</ol></td>
 <td><p>a) Transformando de formato largo a ancho</p>
 <p>b) Transformando de formato ancho a largo</p>
 <p>c) Preparando la tabla para exportar</p></td>
 </tr>
 <tr class="even">
-<td>La expresión <code>-c("marca")</code> significa</td>
+<td><ol start="8" type="1">
+<li>La expresión <code>-c("marca")</code> significa</li>
+</ol></td>
 <td><p>a) Que estamos borrando la columna “marca” de <code>tabla_cars</code></p>
 <p>b) Que excluya “marca” del pivot</p>
 <p>c) Ninguna de las anteriores</p></td>
@@ -1844,7 +1882,8 @@ Mauricio Moreno, PhD
 <ul>
 <li><p><code>separate</code> sirve para separar una columna en otras más si es que existe una expresión regular.</p></li>
 <li><p><code>unite</code> hace lo contrario a <code>separate</code>.</p></li>
-<li><p><code>pivot_longer</code> transforma tablas de formato ancho a largo</p></li>
+<li><p><code>pivot_longer</code> transforma tablas de formato ancho a largo.</p></li>
+<li><p><code>pivot_wider</code> transofrma tablas de formato largo a ancho.</p></li>
 </ul></li>
 <li><p><code>readr</code>, parte del <code>tidyverse</code></p>
 <ul>
